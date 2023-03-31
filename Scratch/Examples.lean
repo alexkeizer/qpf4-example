@@ -1,6 +1,6 @@
 import Qpf
 
-open MvQpf
+open MvQPF
 
 
 data QpfList α 
@@ -11,9 +11,6 @@ data QpfList α
 codata QpfStream α where
   | mk : α → QpfStream α → QpfStream α
 
-
-def QpfStream.mk (hd : α) (tl : QpfStream α) : QpfStream α :=
-  Cofix.mk ⟨hd, tl⟩
 
 
 /-- The stream `0,0,0,...` -/

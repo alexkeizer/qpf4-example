@@ -3,8 +3,11 @@ open Lake DSL
 
 package scratch {
   -- add configuration options here
-  dependencies := #[{
-    name := `qpf
-    src := Source.git "https://github.com/alexkeizer/qpf4.git" "d770033610cc5597d95feeb9705170cef3e98715"
-  }]
 }
+
+lean_lib Scratch
+
+@[default_target]
+lean_exe Main
+
+require Qpf from git "https://github.com/alexkeizer/qpf4.git" @ "512160641c9cfc186cc8fac9903b1c42cdc84755"
