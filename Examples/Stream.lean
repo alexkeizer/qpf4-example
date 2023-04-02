@@ -3,11 +3,6 @@ import Qpf
 open MvQPF
 
 
-data QpfList α 
-  | nil
-  | cons : α → QpfList α → QpfList α
-
-
 codata QpfStream α where
   | mk : α → QpfStream α → QpfStream α
 

@@ -1,4 +1,4 @@
-import Scratch
+import Examples
 
 def main : IO Unit := do
   let nats := QpfStream.naturals

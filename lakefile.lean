@@ -1,11 +1,11 @@
 import Lake
 open Lake DSL
 
-package scratch {
+package examples {
   -- add configuration options here
 }
 
-lean_lib Scratch
+lean_lib Examples
 
 @[default_target]
 lean_exe Main
